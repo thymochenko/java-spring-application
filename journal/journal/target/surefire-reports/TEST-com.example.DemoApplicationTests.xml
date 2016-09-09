@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.DemoApplicationTests" time="0.016" tests="1" errors="1" skipped="0" failures="0">
+<testsuite name="com.example.DemoApplicationTests" time="0.062" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
@@ -59,84 +59,5 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="initializationError" classname="com.example.DemoApplicationTests" time="0.016">
-    <error message="Found multiple @SpringBootConfiguration annotated classes" type="java.lang.IllegalStateException"><![CDATA[java.lang.IllegalStateException: Found multiple @SpringBootConfiguration annotated classes
-	at org.springframework.util.Assert.state(Assert.java:392)
-	at org.springframework.boot.test.context.SpringBootConfigurationFinder.scanPackage(SpringBootConfigurationFinder.java:69)
-	at org.springframework.boot.test.context.SpringBootConfigurationFinder.findFromPackage(SpringBootConfigurationFinder.java:59)
-	at org.springframework.boot.test.context.SpringBootConfigurationFinder.findFromClass(SpringBootConfigurationFinder.java:52)
-	at org.springframework.boot.test.context.SpringBootTestContextBootstrapper.getOrFindConfigurationClasses(SpringBootTestContextBootstrapper.java:155)
-	at org.springframework.boot.test.context.SpringBootTestContextBootstrapper.processMergedContextConfiguration(SpringBootTestContextBootstrapper.java:116)
-	at org.springframework.test.context.support.AbstractTestContextBootstrapper.buildMergedContextConfiguration(AbstractTestContextBootstrapper.java:409)
-	at org.springframework.test.context.support.AbstractTestContextBootstrapper.buildDefaultMergedContextConfiguration(AbstractTestContextBootstrapper.java:323)
-	at org.springframework.test.context.support.AbstractTestContextBootstrapper.buildMergedContextConfiguration(AbstractTestContextBootstrapper.java:277)
-	at org.springframework.test.context.support.AbstractTestContextBootstrapper.buildTestContext(AbstractTestContextBootstrapper.java:112)
-	at org.springframework.boot.test.context.SpringBootTestContextBootstrapper.buildTestContext(SpringBootTestContextBootstrapper.java:74)
-	at org.springframework.test.context.TestContextManager.<init>(TestContextManager.java:120)
-	at org.springframework.test.context.TestContextManager.<init>(TestContextManager.java:105)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTestContextManager(SpringJUnit4ClassRunner.java:152)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.<init>(SpringJUnit4ClassRunner.java:143)
-	at org.springframework.test.context.junit4.SpringRunner.<init>(SpringRunner.java:49)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:104)
-	at org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:86)
-	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
-	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:26)
-	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
-	at org.junit.internal.requests.ClassRequest.getRunner(ClassRequest.java:33)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-]]></error>
-    <system-out><![CDATA[17:25:57.830 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.example.DemoApplicationTests]
-17:25:57.846 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-17:25:57.863 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-17:25:57.904 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.example.DemoApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-17:25:57.926 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.DemoApplicationTests], using SpringBootContextLoader
-17:25:57.940 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.DemoApplicationTests]: class path resource [com/example/DemoApplicationTests-context.xml] does not exist
-17:25:57.941 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.DemoApplicationTests]: class path resource [com/example/DemoApplicationTestsContext.groovy] does not exist
-17:25:57.941 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-17:25:57.942 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-17:25:58.022 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.DemoApplicationTests]
-17:25:58.102 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
-17:25:58.104 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
-17:25:58.105 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
-17:25:58.124 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [com/example/] to resources [URL [file:/home/thymo/Dropbox/aprenda-a-programar-work/pro-springBoot/journal/journal/target/test-classes/com/example/], URL [file:/home/thymo/Dropbox/aprenda-a-programar-work/pro-springBoot/journal/journal/target/classes/com/example/]]
-17:25:58.125 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/thymo/Dropbox/aprenda-a-programar-work/pro-springBoot/journal/journal/target/test-classes/com/example]
-17:25:58.126 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/thymo/Dropbox/aprenda-a-programar-work/pro-springBoot/journal/journal/target/test-classes/com/example] for files matching pattern [/home/thymo/Dropbox/aprenda-a-programar-work/pro-springBoot/journal/journal/target/test-classes/com/example/*.class]
-17:25:58.132 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/thymo/Dropbox/aprenda-a-programar-work/pro-springBoot/journal/journal/target/classes/com/example]
-17:25:58.133 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/thymo/Dropbox/aprenda-a-programar-work/pro-springBoot/journal/journal/target/classes/com/example] for files matching pattern [/home/thymo/Dropbox/aprenda-a-programar-work/pro-springBoot/journal/journal/target/classes/com/example/*.class]
-17:25:58.138 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:com/example/*.class] to resources [file [/home/thymo/Dropbox/aprenda-a-programar-work/pro-springBoot/journal/journal/target/test-classes/com/example/DemoApplicationTests.class], file [/home/thymo/Dropbox/aprenda-a-programar-work/pro-springBoot/journal/journal/target/classes/com/example/DemoApplication.class], file [/home/thymo/Dropbox/aprenda-a-programar-work/pro-springBoot/journal/journal/target/classes/com/example/SpringBootJournalApplication.class]]
-17:25:58.226 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/thymo/Dropbox/aprenda-a-programar-work/pro-springBoot/journal/journal/target/classes/com/example/DemoApplication.class]
-17:25:58.235 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/thymo/Dropbox/aprenda-a-programar-work/pro-springBoot/journal/journal/target/classes/com/example/SpringBootJournalApplication.class]
-17:25:58.243 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.example.DemoApplicationTests]
-17:25:58.244 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-17:25:58.244 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-17:25:58.245 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.example.DemoApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-17:25:58.246 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.DemoApplicationTests], using SpringBootContextLoader
-17:25:58.248 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.DemoApplicationTests]: class path resource [com/example/DemoApplicationTests-context.xml] does not exist
-17:25:58.248 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.DemoApplicationTests]: class path resource [com/example/DemoApplicationTestsContext.groovy] does not exist
-17:25:58.249 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-17:25:58.249 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-17:25:58.259 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.DemoApplicationTests]
-17:25:58.262 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
-17:25:58.262 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
-17:25:58.263 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
-17:25:58.264 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [com/example/] to resources [URL [file:/home/thymo/Dropbox/aprenda-a-programar-work/pro-springBoot/journal/journal/target/test-classes/com/example/], URL [file:/home/thymo/Dropbox/aprenda-a-programar-work/pro-springBoot/journal/journal/target/classes/com/example/]]
-17:25:58.265 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/thymo/Dropbox/aprenda-a-programar-work/pro-springBoot/journal/journal/target/test-classes/com/example]
-17:25:58.265 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/thymo/Dropbox/aprenda-a-programar-work/pro-springBoot/journal/journal/target/test-classes/com/example] for files matching pattern [/home/thymo/Dropbox/aprenda-a-programar-work/pro-springBoot/journal/journal/target/test-classes/com/example/*.class]
-17:25:58.267 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/thymo/Dropbox/aprenda-a-programar-work/pro-springBoot/journal/journal/target/classes/com/example]
-17:25:58.268 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/thymo/Dropbox/aprenda-a-programar-work/pro-springBoot/journal/journal/target/classes/com/example] for files matching pattern [/home/thymo/Dropbox/aprenda-a-programar-work/pro-springBoot/journal/journal/target/classes/com/example/*.class]
-17:25:58.270 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:com/example/*.class] to resources [file [/home/thymo/Dropbox/aprenda-a-programar-work/pro-springBoot/journal/journal/target/test-classes/com/example/DemoApplicationTests.class], file [/home/thymo/Dropbox/aprenda-a-programar-work/pro-springBoot/journal/journal/target/classes/com/example/DemoApplication.class], file [/home/thymo/Dropbox/aprenda-a-programar-work/pro-springBoot/journal/journal/target/classes/com/example/SpringBootJournalApplication.class]]
-17:25:58.280 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/thymo/Dropbox/aprenda-a-programar-work/pro-springBoot/journal/journal/target/classes/com/example/DemoApplication.class]
-17:25:58.284 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/thymo/Dropbox/aprenda-a-programar-work/pro-springBoot/journal/journal/target/classes/com/example/SpringBootJournalApplication.class]
-]]></system-out>
-  </testcase>
+  <testcase name="contextLoads" classname="com.example.DemoApplicationTests" time="0.062"/>
 </testsuite>

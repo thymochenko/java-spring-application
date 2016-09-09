@@ -1,5 +1,4 @@
-com/example/web/JournalController.class
-com/example/DemoApplication.class
 com/example/domain/Journal.class
 com/example/SpringBootJournalApplication.class
 com/example/repository/JournalRepository.class
+com/example/web/JournalController.class
