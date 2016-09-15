@@ -30,6 +30,7 @@ public class Journal {
   }
 
   Journal() {}
+
   public Long getId() {
    return id;
   }

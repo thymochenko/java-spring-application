@@ -1,0 +1,4 @@
+com/aluno/web/AlunoController.class
+com/aluno/repository/AlunoRepository.class
+com/aluno/SpringBootAlunoApplication.class
+com/aluno/domain/Aluno.class
